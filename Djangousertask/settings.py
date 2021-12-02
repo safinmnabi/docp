@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-q!wl!8ne0b_1nsad)rwo((3vtl)rl!^p71bfo24rfb)%%k9@i1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['20.119.55.244']
 
 
 # Application definition
@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'Djangousertask.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', 
         'NAME': 'intimedb2',
         'USER': 'intime2',
         'PASSWORD': 'abc123456',
         'HOST': 'localhost',   
-        'PORT': '3306',
+        'PORT': '5432',
     }    
 }
 
