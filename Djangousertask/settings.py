@@ -75,26 +75,26 @@ WSGI_APPLICATION = 'Djangousertask.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2', 
-#         'NAME': 'intimedb2',
-#         'USER': 'intime2',
-#         'PASSWORD': 'abc123456',
-#         'HOST': 'localhost',   
-#         'PORT': '5432',
-#     }    
-# }
-
-PROJECT_PATH = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_PATH, 'database.sqlite'),
-    }
-
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', 
+        'NAME': 'intimedb2',
+        'USER': 'intime2',
+        'PASSWORD': 'abc123456',
+        'HOST': 'localhost',   
+        'PORT': '5432',
+    }    
 }
+
+# PROJECT_PATH = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(PROJECT_PATH, 'database.sqlite'),
+#     }
+
+# }
 
 
 # Password validation
