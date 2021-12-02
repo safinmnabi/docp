@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'intimedb2',
         'USER': 'intime2',
         'PASSWORD': 'abc123456',
-        'HOST': 'localhost',   
+        'HOST': 'db',   
         'PORT': '5432',
     }    
 }
