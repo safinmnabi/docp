@@ -1,10 +1,20 @@
-version: '3.8'
-
+version: "3.8"
+   
 services:
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8100
     volumes:
-      - .:/usr/src/app/
+      - .:/home/intime/app/
     ports:
-      - 8000:8000
+      - "8000:8000"
+    environment:
+      - POSTGRES_NAME=intimedb2
+      - POSTGRES_USER=intime2
+      - POSTGRES_PASSWORD=abc123456
+    depends_on:
+      - db
