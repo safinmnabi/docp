@@ -9,8 +9,8 @@ ENV PYTHONUNBUFFERED 1
 
 # install dependencies
 RUN pip install --upgrade pip
-COPY ./requirements.txt .
-RUN pip install -r requirements.txt
+COPY requirements.txt /usr/src/app
+RUN pip install -r usr/src/app/requirements.txt
 
 # copy project
-COPY . .
+COPY . usr/src/app
