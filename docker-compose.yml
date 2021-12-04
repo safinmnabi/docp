@@ -5,7 +5,7 @@ services:
     image: postgres
     container_name : db
     environment:
-      - POSTGRES_NAME=intimedb2
+      - POSTGRES_DB=intimedb2
       - POSTGRES_USER=intime2
       - POSTGRES_PASSWORD=abc123456
     volumes:
