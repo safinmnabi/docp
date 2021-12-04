@@ -25,7 +25,7 @@ def Signin(request):
 		if request.session['isLogged']:
 			return redirect('Signin')
 		else:
-			return render(request, 'Signin.html' )
+			return render(request, 'signin.html' )
 
 def Signup(request):
 	if request.method == 'POST':
